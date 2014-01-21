@@ -2,6 +2,7 @@
 
 SISTEMA DE CONTROL DE VERSIONES
 
+FTP no es un sistema de control de versiones
 Archivos
 FTP ---> Hosting  /public_html/index.php
 www.fuckencio.com
