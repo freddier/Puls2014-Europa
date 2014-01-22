@@ -1,181 +1,227 @@
-a
-{
-	color: #22BCE0;
+a {
+	color:#22BEC0;
 }
+
 body
 {
-	background: #EEEEEE;
+	background: #eee;
 	font-family: Arial;
 	font-size: 16px;
+	min-width: 470px;
 }
+
 footer
 {
-	color: rgba(255,255,255,0.7);
-	background: #22BCE0;
+	color:rgba(255,255,255,0.7);
+	background: #22BEC0;
 	text-align: center;
-	padding: 1em;
+	padding:1em;
 }
+
 footer p:first-child
 {
-	margin-bottom: 0;
+	margin-bottom:0;
 }
+
 footer p:last-child
 {
-	margin-top: 0;
+	margin-top:0;
 }
+
 footer p:last-child:after
 {
 	content: " -";
 }
+
 footer p:last-child:before
 {
 	content: "- ";
 }
-header
+header 
 {
 	background: #343B54;
-	color: white;
+	color:white;
 	overflow: hidden;
-	padding: 0.5em;
-	position: relative;
+	padding:0.5em;	
+	position:relative;
 }
-header figure
+
+header figure 
 {
 	float: left;
 }
-header h1
+
+header h1 
 {
-	font-size: 1.2em;
+	font-size:1.2em;
 	font-weight: normal;
-	margin: 0.2em 70px 0 0;
+	margin:0.2em 70px 0 0;
 }
-header #avatar
-{
-	margin: 0.5em 0.5em 0 0;
-	position: absolute;
-	right: 0;
-	top: 0;
+
+header #avatar 
+{	
+	margin:0.5em 0.5em 0 0;
+	position:absolute;
+	right:0;
+	top:0;
 }
-header #avatar img
+
+header #avatar img 
 {
 	border-radius: 50%;
-	width: 55px;
+	width:52px;
 }
-header #logo img
+
+header #logo img 
 {
 	border-right: 1px solid white;
 	margin-right: 0.5em;
 	padding-right: 0.5em;
-	width: 52px;
+	width:52px;
 }
-nav
+
+nav 
 {
 	background: #80BCA3;
-	box-shadow: rgba(0,0,0,0.5) 0px 0px 10px;
-	padding: 0 0.5em;
+	box-shadow: rgba(0,0,0,0.5) 0px 0px 5px;
+	padding:0 0.5em;
 	position: relative;
 }
-nav ul
+
+nav ul 
 {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
+
 nav ul #publicar_nav
 {
 	position: absolute;
-	top: -0.3em;
-	right: 0;
+	top:-0.3em;
+	right:0;
 }
+
 nav ul #publicar_nav a
 {
-	background: #22BCE0;
+	background:#22BCE0;
 	border-radius: 5px;
-	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
+	box-shadow:rgba(0,0,0,0.5) 5px 5px 20px;
 	font-style: italic;
 	padding: 0.8em 0.5em;
 	text-decoration: none;
-	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+	text-shadow:rgba(0,0,0,0.5) 2px 2px 5px;
 }
-nav ul li
+
+nav ul li 
 {
 	display: inline-block;
-	margin: 0 1em 0 0;
+	margin:0 1em 0 0;
 }
+
 nav ul li a
 {
-	color: white;
+	color:white;
 	display: block;
 	padding: 0.5em 0;
 }
-#contenido
+
+#contenido 
 {
 	margin: 1em;
 }
-#contenido .item
+
+#contenido article
+{
+	margin-top:2.5em;
+}
+
+#contenido article:first-child
+{
+	margin-top:0;
+}
+
+#contenido .item 
 {
 	background: white;
 	border-bottom: 3px solid #22BCE0;
-	margin-bottom: 3em; 
+	border-radius:0.3em 0.3em 0 0;
+	margin-bottom:2em;
 	min-height: 128px;
-	position: relative;
+	position:relative;	
 }
+
 #contenido .item .autor_item
 {
-	color: #AAA;
+	color:#aaa;
+	font-size:0.9em;
 }
+
 #contenido .item .datos_item
 {
-	margin: 1em 1em 0 0;
+	margin:1em 1em 0 0;
 	text-align: right;
 }
+
 #contenido .item .datos_item .fecha_item
 {
-	color: #AAA;
+	color:#aaa;
+	font-size:0.8em;
 }
+
 #contenido .item .datos_item .tag_item
 {
-	background: #F4502A;
-	border-radius: 0.5em;
-	color: white;
-	float: left;
-	display: inline-block;
+	background: #F4520A;
+	border-radius: 0.3em;
+	color:white;
+	float:left;
+	display:inline-block;
 	padding: 0.2em 0.5em;
 	text-decoration: none;
+	font-size:0.9em;
+
 }
+
 #contenido .item .imagen_item
 {
-	float: left;
+	float:left;
 	margin: 0 1em 0 0;
 }
+
 #contenido .item .imagen_item img
 {
-	width: 96px;
+	border-radius: 0.3em 0 0 0;
+	width:96px;
 }
+
 #contenido .item .titulo_item
 {
 	font-size: 1.2em;
 	font-style: italic;
-	padding: 1em 1em 0 0;
+	padding:1em 1em 0 0;	
 }
+
 #contenido .item .titulo_item a
 {
-	color: #444;
+	font-size: #444;
 	text-decoration: none;
 }
-#contenido .item .votacion
+
+#contenido .item .votacion_item
 {
-	background: white;
-	border-radius: 0 0 0.5em 0.5em;
-	left: 1%; 
-	margin-top: 3px;
-	padding: 0.2em 0.5em;
+	background: white;	
+	border-radius:0 0 0.4em 0.4em;
+	left:0.5em;
+	margin-top:3px;
+	padding:0.2em 0.5em;
 	position: absolute;
-	top: 100%;
-	width: 95%;
+	top:100%;
+	right:0.5em;	
 }
-#contenido .item .votacion .comentarios_item, 
-#contenido .item .votacion .guardar_item
+
+#contenido .item .votacion_item .comentarios_item,
+#contenido .item .votacion_item .guardar_item
 {
-	float: right;
+	float:right;
 }
+
