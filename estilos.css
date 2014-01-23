@@ -7,6 +7,8 @@ body
 	background: #EEEEEE;
 	font-family: Arial;
 	font-size: 16px;
+	margin: 0 auto;
+	max-width: 1200px;
 }
 footer
 {
@@ -89,6 +91,7 @@ nav ul #publicar_nav
 }
 nav ul #publicar_nav a
 {
+	display: block;
 	background: #22BCE0;
 	border-radius: 5px;
 	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
