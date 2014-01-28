@@ -309,26 +309,25 @@ aside{
 }
 
 /**
- * Formularios
+ * Form
  */
-.formulario{
+.form-add{
 	text-align: right;
 	padding: 1em;
 	display: none;
 }
-.formulario input{
+.form-add input{
 	border-radius: 5px;
+	border: 1px solid #ccc;
 	padding: 0.2em 0.6em;
 }
-.formulario input[type="text"],
-.formulario input[type="url"]{
-	border: 1px solid #888;
-}
-.formulario input[type="submit"]{
+.form-add input[type="submit"]{
 	background: #22BCE0;
 	border: 1px solid #22BCE0;
-	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
-	font-style: italic;
-	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
 	color: white;
+	font-style: italic;
+	text-decoration: none;
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
