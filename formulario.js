@@ -63,15 +63,7 @@ function grabarInformacion(e) {
 }
 
 $('#publicar_nav a').click( mostrarOcultarFormulario );
-$('#formulario')
-	.on('submit', agregarPost)
-	.find('#link')
-	.on('focus', function(){
-		$('#link').val('http://');
-	})
-	.on('blur', function(){
-		$('#link').val('');
-	});
+$('#formulario').on('submit', agregarPost);
 
 
 

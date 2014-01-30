@@ -38,6 +38,7 @@
 		<input type="submit" value="Agregar">
 	</form>
 	<aside>
+		<div id="geo"></div>
 		<video width="320" height="240" autoplay controls>
 			<source src="lecturas.mp4" type="video/mp4">
 			<source src="lecturas.ogg" type="video/ogg">
@@ -198,13 +199,34 @@
 	</footer>
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="formulario.js"></script>
+	<script src="ajax.js"></script>
 	<script>
-		window.onload = function() {
-			console.log('Ya se disparó el evento onLoad');
- 		}
-
 		$(function(){
-			console.log('Ya se disparó el evento DOMContentLoaded');	
+			var geo = navigator.geolocation;
+
+			function geo_exito(position) {
+				var lat = position.coords.latitude;
+				var lon = position.coords.longitude;
+
+				console.log(position.coords.accuracy);
+
+				var mapa = new Image();
+				mapa.src = "http://maps.googleapis.com/maps/api/staticmap?center="+lat+","+lon+"&zoom=13&size=200x200&sensor=false";
+
+				$('#geo').append(mapa);
+
+				obtenerGeoInformacion(lat, lon);
+			}
+
+			function geo_error() {
+				console.log("Hhhmmm... esto es incómodo, no se donde estás.");
+			}
+
+			geo.getCurrentPosition(geo_exito, geo_error, {
+			  enableHighAccuracy: true,
+			  timeout: 5000,
+			  maximumAge: 0
+			});
 		});
 	</script>
 </body>
