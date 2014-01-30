@@ -22,7 +22,9 @@ function mostrarOcultarFormulario(){
 }
 
 function agregarPost(e) {
+	console.log(e);
 	e.preventDefault();
+	return;
 
 	var titulo = $titulo.val(),
 		url = $url.val(),
@@ -61,7 +63,16 @@ function grabarInformacion(e) {
 }
 
 $('#publicar_nav a').click( mostrarOcultarFormulario );
-$('#formulario').on('submit', agregarPost);
+$('#formulario')
+	.on('submit', agregarPost)
+	.find('#link')
+	.on('focus', function(){
+		$('#link').val('http://');
+	})
+	.on('blur', function(){
+		$('#link').val('');
+	});
+
 
 
 
