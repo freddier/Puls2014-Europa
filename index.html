@@ -16,9 +16,7 @@
 			<img src="logo.png" />
 		</figure>
 		<h1>Puls2014: Comunidad de personas atractivas y millonarias</h1>
-		<figure id="avatar">
-			<img src="avatar.jpg" />
-		</figure>
+		<figure id="avatar"></figure>
 	</header>
 	<nav>
 		<ul>
@@ -38,6 +36,7 @@
 		<input type="submit" value="Agregar">
 	</form>
 	<aside>
+		<div id="clima"></div>
 		<div id="geo"></div>
 		<video width="320" height="240" autoplay controls>
 			<source src="lecturas.mp4" type="video/mp4">
@@ -211,7 +210,7 @@
 				console.log(position.coords.accuracy);
 
 				var mapa = new Image();
-				mapa.src = "http://maps.googleapis.com/maps/api/staticmap?center="+lat+","+lon+"&zoom=13&size=200x200&sensor=false";
+				mapa.src = "http://maps.googleapis.com/maps/api/staticmap?center="+lat+","+lon+"&zoom=13&size=200x200&sensor=false&maptype=hybrid";
 
 				$('#geo').append(mapa);
 
@@ -227,6 +226,9 @@
 			  timeout: 5000,
 			  maximumAge: 0
 			});
+
+			loadLogos();
+			loadUser();
 		});
 	</script>
 </body>
